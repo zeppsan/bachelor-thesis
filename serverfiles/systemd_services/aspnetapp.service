@@ -1,0 +1,13 @@
+[Unit]
+Description=ASP.NET Core API
+After=network.target
+
+[Service]
+Type=simple
+User=root
+Group=www-data
+WorkingDirectory=/var/www/examensarb/aspnet/aspnet
+ExecStart=dotnet /var/www/examensarb/aspnet/aspnet/bin/release/net5.0/aspnet.dll &
+
+[Install]
+WantedBy=multi-user.target

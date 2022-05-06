@@ -1,0 +1,13 @@
+[Unit]
+Description=uWSGI instance to serve myproject
+After=network.target
+
+[Service]
+Type=simple
+User=root
+Group=www-data
+WorkingDirectory=/var/www/examensarb/flask
+ExecStart=/usr/bin/gunicorn -w 3 app:app
+
+[Install]
+WantedBy=multi-user.target

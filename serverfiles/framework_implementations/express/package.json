@@ -1,0 +1,22 @@
+{
+  "name": "expressendpoint",
+  "version": "1.0.0",
+  "description": "express endpoint for examensarbete",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zeppsan/examensarbete.git"
+  },
+  "author": "eric qvarnström & Max Jonsson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zeppsan/examensarbete/issues"
+  },
+  "homepage": "https://github.com/zeppsan/examensarbete#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}

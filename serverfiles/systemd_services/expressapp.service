@@ -1,0 +1,13 @@
+[Unit]
+Description=Express API
+After=network.target
+
+[Service]
+Type=simple
+User=root
+Group=www-data
+WorkingDirectory=/var/www/examensarb/express
+ExecStart=pm2 start /var/www/examensarb/express/index.js --name express-app -i max -- start 
+
+[Install]
+WantedBy=multi-user.target
